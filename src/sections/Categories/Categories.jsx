@@ -60,8 +60,8 @@ const Categories = () => {
 			isActionsHiddenOnMobile
 			actions={(
 			<div>
-				<button>назад</button>
-				<button>вперед</button>
+				<button>назад!</button>
+				<button>вперед!</button>
 			</div>
 		)}>
 			{
