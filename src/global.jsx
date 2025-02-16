@@ -6,7 +6,7 @@ import Footer from "@/layouts/Footer";
 
 export default function (props) {
 
-	const {children, title, url} = props
+	const {children, title, url, isHeaderFixed} = props
 
 	return (
 		<>
@@ -20,7 +20,7 @@ export default function (props) {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
 			</Head>
-			<Header url={url}/>
+			<Header url={url} isFixed={isHeaderFixed}/>
 			<Content>
 				{children}
 			</Content>
