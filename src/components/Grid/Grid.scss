@@ -20,4 +20,8 @@
 			--gridColumns: 1;
 		}
 	}
+
+	//&__item:nth-child(odd):last-child {
+	//	grid-column: -1 / 1;
+	//}
 }
