@@ -41,7 +41,7 @@ const Footer = () => {
 			<div className='footer__inner container'>
 				<nav className='footer__menu'>
 					{menuItems.map(({title, links, socialLinks}, idx) => (
-						<div className="footer__menu-column">
+						<div className="footer__menu-column" key={idx}>
 							<a href="/" className="footer__menu-title h6">{title}</a>
 							{links?.length > 0 && (
 								<ul className="footer__menu-list">
