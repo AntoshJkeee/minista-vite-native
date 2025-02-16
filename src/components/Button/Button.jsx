@@ -13,7 +13,8 @@ const Button = (props) => {
 		isLabelHidden = false,
 		iconName,
 		iconPosition = 'before',
-		hasFillIcon
+		hasFillIcon,
+		extraAttrs
 	} = props
 
 	const isLink = href !== undefined
@@ -30,6 +31,7 @@ const Button = (props) => {
 				[`button__${mode}`] : mode
 			})}
 			{...specificProps}
+			{...extraAttrs}
 			title={title}
 			aria-label={title}
 		>
