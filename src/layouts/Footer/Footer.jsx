@@ -71,7 +71,7 @@ const Footer = () => {
 					<div className="footer__extra-links">
 						{
 							extraLinks.map((link, idx) => (
-								<a href="/" className="footer__extra-link">
+								<a href="/" className="footer__extra-link" key={idx}>
 									{link}
 								</a>
 							))

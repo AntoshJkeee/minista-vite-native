@@ -5,7 +5,7 @@ export default defineConfig({
   root: '',
   base: '/',
   public: 'public',
-  out: 'dist',
+  out: 'build',
   assets: {
     outDir: 'assets',
     outName: '[name]',
@@ -44,7 +44,7 @@ export default defineConfig({
       outName: '[name]',
     },
     bundle: {
-      outName: 'bundle',
+      outName: 'main',
     },
     partial: {
       usePreact: false,

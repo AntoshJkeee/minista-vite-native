@@ -7,7 +7,7 @@ const Logo = (props) => {
 	return (
 		<a className='logo' href='/' title='Home' aria-label='Home'>
 			<img
-				src="/logo.svg"
+				src="/images/logo.svg"
 				alt=""
 				className={cn(className, 'logo')}
 				width={199}

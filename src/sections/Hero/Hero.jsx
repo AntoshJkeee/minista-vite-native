@@ -7,7 +7,7 @@ const Hero = () => {
 			<div className="hero__pano">
 				<div className="hero__pano-inner container">
 					<button className="hero__play-button" type='button' aria-label='Play Video' title='Play Video'>
-						<img  alt='' src='/play.svg' width={470} height={470} className='hero__play-button-image'/>
+						<img  alt='' src='/images/play.svg' width={470} height={470} className='hero__play-button-image'/>
 					</button>
 				</div>
 			</div>

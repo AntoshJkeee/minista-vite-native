@@ -6,7 +6,6 @@ const Categories = () => {
 
 	const categoryItems = [
 		{
-			id: 0,
 			title: 'Action',
 			images: [
 				'/src/assets/images/categories/action/1.jpg',
@@ -16,7 +15,6 @@ const Categories = () => {
 			]
 		},
 		{
-			id: 1,
 			title: 'Adventure',
 			images: [
 				'/src/assets/images/categories/action/1.jpg',
@@ -26,7 +24,6 @@ const Categories = () => {
 			]
 		},
 		{
-			id: 2,
 			title: 'Comedy',
 			images: [
 				'/src/assets/images/categories/action/1.jpg',
@@ -36,7 +33,6 @@ const Categories = () => {
 			]
 		},
 		{
-			id: 3,
 			title: 'Drama',
 			images: [
 				'/src/assets/images/categories/action/1.jpg',
@@ -46,7 +42,6 @@ const Categories = () => {
 			]
 		},
 		{
-			id: 4,
 			title: 'Horror',
 			images: [
 				'/src/assets/images/categories/action/1.jpg',
@@ -70,8 +65,8 @@ const Categories = () => {
 			</div>
 		)}>
 			{
-				categoryItems.map(({title, images, id}) => (
-					<CategoryCard title={title} images={images} key={id}/>
+				categoryItems.map((item, idx) => (
+					<CategoryCard {...item} key={idx}/>
 				))
 			}
 		</Section>
