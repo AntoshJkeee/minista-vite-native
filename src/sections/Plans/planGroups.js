@@ -33,7 +33,7 @@ const planGroups = [
 		title: 'Yearly',
 		items: [
 			{
-				title: 'Basic Plan',
+				title: 'Mega Plan',
 				description: 'Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.',
 				price: {
 					value: '$49.99',
@@ -41,7 +41,7 @@ const planGroups = [
 				}
 			},
 			{
-				title: 'Standard Plan',
+				title: 'Super Plan',
 				description: 'Access to a wider selection of movies and shows, including most new releases and exclusive content',
 				price: {
 					value: '$72.99',
@@ -49,7 +49,7 @@ const planGroups = [
 				}
 			},
 			{
-				title: 'Premium Plan',
+				title: 'Extra Mega Plan',
 				description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
 				price: {
 					value: '$94.99',
@@ -57,7 +57,7 @@ const planGroups = [
 				}
 			}
 		]
-	}
+	},
 ]
 
 export default planGroups
