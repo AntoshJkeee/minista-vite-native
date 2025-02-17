@@ -8,6 +8,7 @@ const Icon = (props) => {
 		className,
 		name,
 		hasFill = false,
+		ariaLabel
 	} = props
 
 	const params = {
@@ -16,7 +17,10 @@ const Icon = (props) => {
 	}
 
 	return (
-		<span className={cn(className, 'icon')}>
+		<span
+			className={cn(className, 'icon')}
+			aria-label={ariaLabel}
+		>
 			<MinistaIcon iconId={name} {...params}/>
 		</span>
 	);
