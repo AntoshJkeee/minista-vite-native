@@ -3,6 +3,8 @@ import cn from 'classnames'
 
 const AccordionGroup = (props) => {
 	const {
+		className,
+		mode = '', // '' (default) | 'dark'
 		columns = 1,
 		children,
 		isOrderedList = true,
@@ -13,8 +15,9 @@ const AccordionGroup = (props) => {
 
 	return (
 		<ListTag
-			className={cn('accordion-group', {
+			className={cn(className, 'accordion-group', {
 				[`accordion-group--${columns}-columns`]: columns > 1,
+				[`accordion-group--${mode}`]: mode,
 				'accordion-group--has-counter': isOrderedList,
 			})}
 		>
