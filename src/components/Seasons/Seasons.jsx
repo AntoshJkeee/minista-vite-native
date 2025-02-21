@@ -1,10 +1,8 @@
 import './Seasons.scss'
-import AccordionGroup from '@/components/AccordionGroup'
+import { AccordionGroup, Accordion, EpisodeCard } from '@/components'
 import seasonItems from '@/components/Seasons/seasonItems'
-import Accordion from '@/components/Accordion'
-import EpisodeCard from "@/components/EpisodeCard";
 
-const Seasons = () => {
+export const Seasons = () => {
   return (
     <AccordionGroup
       className="seasons"
@@ -34,5 +32,3 @@ const Seasons = () => {
     </AccordionGroup>
   )
 }
-
-export default Seasons

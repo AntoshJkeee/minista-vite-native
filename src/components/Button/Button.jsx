@@ -1,8 +1,8 @@
 import './Button.scss'
 import cn from "classnames";
-import Icon from "@/components/Icon";
+import { Icon } from "@/components";
 
-const Button = (props) => {
+export const Button = (props) => {
 	const {
 		className,
 		href,
@@ -43,5 +43,3 @@ const Button = (props) => {
 		</Component>
 	)
 }
-
-export default Button

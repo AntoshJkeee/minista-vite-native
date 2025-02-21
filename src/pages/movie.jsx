@@ -1,16 +1,14 @@
-import MovieBanner from "@/sections/MovieBanner";
-import MovieDetails from "@/sections/MovieDetails";
+import { MovieBanner, MovieDetails} from '@/sections'
 
 export const metadata = {
-	title: 'Movie - Kantara'
+  title: 'Movie - Kantara',
 }
 
-export default function () {
-
-	return (
-		<>
-			<MovieBanner />
-			<MovieDetails />
-		</>
-	)
+export default () => {
+  return (
+    <>
+      <MovieBanner />
+      <MovieDetails />
+    </>
+  )
 }

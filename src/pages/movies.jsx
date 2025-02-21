@@ -1,16 +1,14 @@
-import MoviesBanner from "@/sections/MoviesBanner";
-import Collections from "@/sections/Collections";
+import { MoviesBanner, Collections } from '@/sections'
 
 export const metadata = {
-	title: 'Movies & Shows'
+  title: 'Movies & Shows',
 }
 
-export default function () {
-
-	return (
-		<>
-			<MoviesBanner />
-			<Collections />
-		</>
-	)
+export default () => {
+  return (
+    <>
+      <MoviesBanner />
+      <Collections />
+    </>
+  )
 }

@@ -43,6 +43,18 @@
 		transition-duration: var(--transition-duration);
 		transition-behavior: allow-discrete;
 
+		//@include tablet {
+		//	&[open] {
+		//		display: flex;
+		//
+		//		@include starting-styles
+		//	}
+		//
+		//	&:not([open]) {
+		//		@include starting-styles
+		//	}
+		//}
+
 		@include tablet-above {
 			display: contents;
 		}
@@ -50,18 +62,6 @@
 		@mixin starting-styles {
 			opacity: 0;
 			translate: 50%
-		}
-
-		&[open] {
-			display: flex;
-
-			@starting-style {
-				@include starting-styles
-			}
-		}
-
-		&:not([open]) {
-			@include starting-styles
 		}
 	}
 

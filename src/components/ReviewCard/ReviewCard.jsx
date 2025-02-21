@@ -1,8 +1,7 @@
 import './ReviewCard.scss'
-import Badge from '@/components/Badge'
-import RatingView from '@/components/RatingView'
+import { Badge, RatingView } from '@/components'
 
-const ReviewCard = (props) => {
+export const ReviewCard = (props) => {
   const {
     name,
     subtitle,
@@ -30,5 +29,3 @@ const ReviewCard = (props) => {
     </div>
   )
 }
-
-export default ReviewCard

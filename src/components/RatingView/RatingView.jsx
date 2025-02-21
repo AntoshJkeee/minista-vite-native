@@ -1,6 +1,6 @@
 import './RatingView.scss'
 
-const RatingView = (props) => {
+export const RatingView = (props) => {
   const {
     value = 5,
     label,
@@ -40,5 +40,3 @@ const RatingView = (props) => {
     </div>
   )
 }
-
-export default RatingView

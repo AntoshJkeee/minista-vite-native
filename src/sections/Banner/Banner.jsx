@@ -1,7 +1,7 @@
 import './Banner.scss'
-import Button from "@/components/Button";
+import { Button } from "@/components";
 
-const Banner = () => {
+export const Banner = () => {
 	return (
 		<section
 			className='banner container'
@@ -25,5 +25,3 @@ const Banner = () => {
 		</section>
 	);
 };
-
-export default Banner;

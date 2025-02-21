@@ -1,7 +1,7 @@
 import './Logo.scss';
 import cn from 'classnames';
 
-const Logo = (props) => {
+export const Logo = (props) => {
 	const {className, loading = 'lazy'} = props
 
 	return (
@@ -15,6 +15,4 @@ const Logo = (props) => {
 				loading={loading}/>
 		</a>
 	);
-};
-
-export default Logo;
+}

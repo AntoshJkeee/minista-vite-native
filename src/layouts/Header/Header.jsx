@@ -1,11 +1,8 @@
 import './Header.scss';
-import Logo from "@/components/Logo";
 import cn from 'classnames'
-import Button from "@/components/Button";
-import BurgerButton from "@/components/BurgerButton";
+import { Button, Logo, BurgerButton} from "@/components";
 
-const Header = (props) => {
-
+export const Header = (props) => {
 	const {url, isFixed} = props
 
 	const menuItems = [
@@ -65,5 +62,3 @@ const Header = (props) => {
 		</header>
 	)
 }
-
-export default Header;

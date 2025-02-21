@@ -2,7 +2,7 @@ import './Icon.scss'
 import cn from "classnames";
 import { Icon as MinistaIcon} from 'minista';
 
-const Icon = (props) => {
+export const Icon = (props) => {
 
 	const {
 		className,
@@ -24,6 +24,4 @@ const Icon = (props) => {
 			<MinistaIcon iconId={name} {...params}/>
 		</span>
 	);
-};
-
-export default Icon;
+}

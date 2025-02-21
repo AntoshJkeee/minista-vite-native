@@ -1,12 +1,9 @@
 import '@/styles';
 import { Head } from "minista"
-import Header from "@/layouts/Header";
-import Content from "@/layouts/Content";
-import Footer from "@/layouts/Footer";
-import Banner from "@/sections/Banner";
+import { Header, Content, Footer } from "@/layouts"
+import { Banner } from "@/sections";
 
-export default function (props) {
-
+export default (props) => {
 	const {children, title, url, isHeaderFixed} = props
 
 	return (

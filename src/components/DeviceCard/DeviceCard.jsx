@@ -1,6 +1,6 @@
 import './DeviceCard.scss'
 
-const DeviceCard = (props) => {
+export const DeviceCard = (props) => {
 
 	const {
 		title,
@@ -21,6 +21,4 @@ const DeviceCard = (props) => {
 			</div>
 		</div>
 	);
-};
-
-export default DeviceCard;
+}

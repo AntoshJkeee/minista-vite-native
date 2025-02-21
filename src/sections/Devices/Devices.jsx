@@ -1,8 +1,7 @@
-import Section from "@/layouts/Section";
-import Grid from "@/components/Grid";
-import DeviceCard from "@/components/DeviceCard";
+import { Section } from '@/layouts'
+import { DeviceCard, Grid } from "@/components";
 
-const Devices = () => {
+export const Devices = () => {
 
 	const deviceItems = [
 		{
@@ -53,5 +52,3 @@ const Devices = () => {
 		</Section>
 	);
 };
-
-export default Devices;

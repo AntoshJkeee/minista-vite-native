@@ -2,7 +2,7 @@ import './Checkbox.scss'
 import getIdFromTitle from "@/utils/getIdFromTitle.js";
 import cn from "classnames";
 
-const Checkbox = (props) => {
+export const Checkbox = (props) => {
   const {
     className,
     id = getIdFromTitle(props.label),
@@ -24,6 +24,4 @@ const Checkbox = (props) => {
         <span className='checkbox__label'>{label}</span>
       </label>
   );
-};
-
-export default Checkbox;
+}

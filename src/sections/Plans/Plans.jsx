@@ -1,11 +1,8 @@
-import Section from "@/layouts/Section";
-import Grid from "@/components/Grid";
+import { Section } from '@/layouts'
+import { Grid, PlanCard, Tabs, TabsNavigation } from "@/components";
 import planGroups from "@/sections/Plans/planGroups";
-import PlanCard from "@/components/PlanCard";
-import TabsNavigation from "@/components/Tabs/components/TabsNavigation";
-import Tabs from "@/components/Tabs";
 
-const Plans = () => {
+export const Plans = () => {
 
 	const tabsTitle = 'plans-tabs'
 	const tabsNavigationId = 'plans-tabs-navigation'
@@ -40,6 +37,4 @@ const Plans = () => {
 			/>
 		</Section>
 	);
-};
-
-export default Plans;
+}

@@ -13,8 +13,7 @@ class Tabs extends BaseComponent{
 	}
 
 	stateClasses = {
-		isActive: 'is-active',
-
+		isActive: 'is-active'
 	}
 
 	stateCSSVariables = {
@@ -39,7 +38,7 @@ class Tabs extends BaseComponent{
 		setTimeout(this.bindObservers, 500)
 	}
 
-	updateUi() {
+	updateUI() {
 		const { activeTabIndex } = this.state
 
 		this.buttonElements.forEach((buttonElement, idx) => {
@@ -166,7 +165,7 @@ class Tabs extends BaseComponent{
 	}
 }
 
-class TabsCollection {
+export class TabsCollection {
 	constructor() {
 		this.init()
 	}
@@ -177,5 +176,3 @@ class TabsCollection {
 		})
 	}
 }
-
-export default TabsCollection

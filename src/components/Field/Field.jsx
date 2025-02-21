@@ -2,12 +2,12 @@ import './Field.scss'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import cn from 'classnames'
 
-const Field = (props) => {
+export const Field = (props) => {
   const {
     className,
     id = getIdFromTitle(props.label),
     label,
-    type, // undefined (default) | 'email | 'textarea'
+    type, // undefined (default) | 'email' | 'textarea'
     placeholder,
     isRequired,
     inputMode,
@@ -55,5 +55,3 @@ const Field = (props) => {
       </div>
   )
 }
-
-export default Field

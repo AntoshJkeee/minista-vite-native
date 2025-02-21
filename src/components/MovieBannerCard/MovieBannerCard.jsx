@@ -1,9 +1,9 @@
 import './MovieBannerCard.scss'
 import { Image } from 'minista'
-import Button from '@/components/Button'
+import { Button } from '@/components'
 import cn from "classnames";
 
-const MovieBannerCard = (props) => {
+export const MovieBannerCard = (props) => {
   const {
     title,
     titleId,
@@ -64,5 +64,3 @@ const MovieBannerCard = (props) => {
     </div>
   )
 }
-
-export default MovieBannerCard

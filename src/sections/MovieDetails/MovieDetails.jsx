@@ -1,21 +1,14 @@
 import './MovieDetails.scss'
-import SliderNavigation from '@/components/Slider/components/SliderNavigation'
-import Slider from '@/components/Slider'
-import PersonCard from '@/components/PersonCard'
-import Button from '@/components/Button'
-import ReviewCard from '@/components/ReviewCard'
-import Icon from "@/components/Icon";
-import Tags from "@/components/Tags/Tags";
-import Ratings from "@/components/Ratings";
+import { SliderNavigation, Slider, PersonCard, Button, Icon, Ratings, ReviewCard, Tags } from '@/components'
 
-const MovieDetails = (props) => {
+export const MovieDetails = (props) => {
 
   const {
     seasons,
   } = props
 
   const titleId = 'movie-details-title'
-  const castSliderNavigationId = 'movie-card-slider-navigation'
+  const castSliderNavigationId = 'movie-cast-slider-navigation'
 
   const castItems = [
     { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
@@ -254,5 +247,3 @@ const MovieDetails = (props) => {
     </section>
   )
 }
-
-export default MovieDetails

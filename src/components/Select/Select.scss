@@ -1,5 +1,5 @@
 .select {
-  --selectButtonArrowIconUrl: url('../../assets/images/select/arrow-down_gray.svg');
+  --selectButtonArrowIconUrl: url('@/assets/images/select/arrow-down_gray.svg');
   --selectButtonArrowIconSize: #{fluid-to-laptop(24, 20)};
   --selectButtonGapX: #{fluid-to-laptop(6, 4)};
   --selectButtonPaddingX: #{fluid-to-laptop(12, 8)};
@@ -15,9 +15,9 @@
     appearance: none;
     padding-left: var(--selectButtonPaddingX);
     padding-right: calc(
-            var(--selectButtonArrowIconSize)
-            + var(--selectButtonPaddingX)
-            + var(--selectButtonGapX)
+      var(--selectButtonArrowIconSize)
+      + var(--selectButtonPaddingX)
+      + var(--selectButtonGapX)
     );
     background-image: var(--selectButtonArrowIconUrl);
     background-position: calc(100% - var(--selectButtonPaddingX)) 50%;
@@ -70,7 +70,7 @@
 
       content: '';
       background:
-              var(--selectButtonArrowIconUrl) center/contain no-repeat;
+        var(--selectButtonArrowIconUrl) center/contain no-repeat;
       transition-duration: inherit;
     }
 

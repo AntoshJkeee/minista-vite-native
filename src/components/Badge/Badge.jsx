@@ -1,8 +1,8 @@
 import './Badge.scss'
 import classNames from 'classnames'
-import Icon from "@/components/Icon";
+import { Icon } from "@/components";
 
-const Badge = (props) => {
+export const Badge = (props) => {
   const {
     className,
     mode = '', // '' (default) | 'accent'
@@ -32,5 +32,3 @@ const Badge = (props) => {
     </div>
   )
 }
-
-export default Badge

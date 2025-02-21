@@ -1,8 +1,8 @@
 import './SliderNavigation.scss'
 import cn from "classnames";
-import Button from "@/components/Button";
+import { Button } from "@/components";
 
-const SliderNavigation = (props) => {
+export const SliderNavigation = (props) => {
 	const {
 		className,
 		id,
@@ -51,6 +51,4 @@ const SliderNavigation = (props) => {
 			/>
 		</div>
 	);
-};
-
-export default SliderNavigation;
+}

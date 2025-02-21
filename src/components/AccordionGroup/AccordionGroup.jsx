@@ -1,7 +1,7 @@
 import './AccordionGroup.scss'
 import cn from 'classnames'
 
-const AccordionGroup = (props) => {
+export const AccordionGroup = (props) => {
 	const {
 		className,
 		mode = '', // '' (default) | 'dark'
@@ -24,7 +24,7 @@ const AccordionGroup = (props) => {
 			{children.map((child, index) => (
 				<li
 					className={cn('accordion-group__item', {
-						'accordion-group__item--last-column-item': columns > 1 && itemsPerColumn / (index + 1) === 1
+						'accordion-group__item--last-column-item': columns > 1 && (index + 1) % itemsPerColumn === 0
 					})}
 					key={index}
 				>
@@ -34,5 +34,3 @@ const AccordionGroup = (props) => {
 		</ListTag>
 	)
 }
-
-export default AccordionGroup

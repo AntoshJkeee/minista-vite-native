@@ -1,13 +1,38 @@
-import OverlayMenu from '@/modules/OverlayMenu';
-import SliderCollection from '@/modules/SliderCollection';
-import TabsCollection from "@/modules/TabsCollection";
-import VideoPlayerCollection from "@/modules/VideoPlayerCollection";
-import InputMaskCollection from "@/modules/inputMaskCollection";
-import SelectCollection from "@/modules/SelectCollection";
+document.addEventListener('DOMContentLoaded', () => {
 
-new OverlayMenu()
-new SliderCollection()
-new TabsCollection()
-new VideoPlayerCollection()
-new InputMaskCollection()
-new SelectCollection()
+	if (document.querySelector('[data-js-overlay-menu]')) {
+		import('/src/modules/SliderCollection').then(({ OverlayMenu }) => {
+			new OverlayMenu()
+		})
+	}
+
+	if (document.querySelector('[data-js-tabs]')) {
+		import('/src/modules/SliderCollection').then(({ SliderCollection }) => {
+			new SliderCollection()
+		})
+	}
+
+	if (document.querySelector('[data-js-tabs]')) {
+		import('/src/modules/TabsCollection').then(({ TabsCollection }) => {
+			new TabsCollection()
+		})
+	}
+
+	if (document.querySelector('[data-js-video-player]')) {
+		import('/src/modules/VideoPlayerCollection').then(({ VideoPlayerCollection }) => {
+			new VideoPlayerCollection()
+		})
+	}
+
+	if (document.querySelector('[data-js-input-mask]')) {
+		import('/src/modules/InputMaskCollection').then(({ InputMaskCollection }) => {
+			new InputMaskCollection()
+		})
+	}
+
+	if (document.querySelector('[data-js-select]')) {
+		import('/src/modules/SelectCollection').then(({ SelectCollection }) => {
+			new SelectCollection()
+		})
+	}
+});

@@ -1,7 +1,7 @@
 import './BurgerButton.scss'
 import cn from "classnames";
 
-const BurgerButton = (props) => {
+export const BurgerButton = (props) => {
 
 	const {
 		className,
@@ -23,6 +23,4 @@ const BurgerButton = (props) => {
 			</svg>
 		</button>
 	);
-};
-
-export default BurgerButton
+}

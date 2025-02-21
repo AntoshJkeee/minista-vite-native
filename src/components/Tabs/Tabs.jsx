@@ -1,9 +1,9 @@
 import './Tabs.scss'
 import cn from 'classnames'
 import getTabsElementsIdsFromTitle from './utils/getTabsElementsIdsFromTitle'
-import TabsNavigation from './components/TabsNavigation'
+import { TabsNavigation } from '@/components'
 
-const Tabs = (props) => {
+export const Tabs = (props) => {
   const {
     className,
     title,
@@ -52,5 +52,3 @@ const Tabs = (props) => {
     </div>
   )
 }
-
-export default Tabs

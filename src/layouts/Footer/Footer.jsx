@@ -1,7 +1,7 @@
 import './Footer.scss';
-import Socials from "@/components/Socials";
+import { Socials } from "@/components";
 
-const Footer = () => {
+export const Footer = () => {
 
 	const menuItems = [
 		{
@@ -82,5 +82,3 @@ const Footer = () => {
 		</footer>
 	)
 }
-
-export default Footer;

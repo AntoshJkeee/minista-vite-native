@@ -1,7 +1,8 @@
 import './Hero.scss'
-import Button from "@/components/Button";
+import { Button } from "@/components";
 
-const Hero = () => {
+export const Hero = () => {
+
 	return (
 		<section className='hero' aria-labelledby='hero-title'>
 			<div className="hero__pano">
@@ -32,5 +33,3 @@ const Hero = () => {
 		</section>
 	);
 };
-
-export default Hero;

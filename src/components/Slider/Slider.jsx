@@ -1,6 +1,6 @@
 import 'swiper/css'
 import './Slider.scss'
-import SliderNavigation from "./components/SliderNavigation";
+import { SliderNavigation } from "@/components";
 import cn from "classnames";
 
 const defaultSliderParams = {
@@ -33,7 +33,7 @@ const defaultSliderParams = {
 	}
 }
 
-const Slider = (props) => {
+export const Slider = (props) => {
 	const {
 		children,
 		navigationTargetElementId = null,
@@ -80,6 +80,4 @@ const Slider = (props) => {
 			)}
 		</div>
 	);
-};
-
-export default Slider
+}

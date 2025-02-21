@@ -1,9 +1,8 @@
 import './MovieCard.scss'
 import { Image } from 'minista'
-import Badge from '@/components/Badge'
-import RatingView from '@/components/RatingView'
+import { Badge, RatingView } from '@/components'
 
-const MovieCard = (props) => {
+export const MovieCard = (props) => {
   const {
     title,
     imgSrc,
@@ -12,7 +11,7 @@ const MovieCard = (props) => {
     released,
     rating,
     season,
-    href = '/move',
+    href = '/movie',
   } = props
 
   return (
@@ -71,5 +70,3 @@ const MovieCard = (props) => {
     </a>
   )
 }
-
-export default MovieCard

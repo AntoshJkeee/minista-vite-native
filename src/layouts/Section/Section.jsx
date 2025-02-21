@@ -1,7 +1,7 @@
 import './Section.scss'
 import cn from "classnames";
 
-const Section = (props) => {
+export const Section = (props) => {
 	const {
 		className,
 		title,
@@ -38,5 +38,3 @@ const Section = (props) => {
 		</section>
 	);
 };
-
-export default Section

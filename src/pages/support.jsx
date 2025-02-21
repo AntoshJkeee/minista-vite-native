@@ -1,14 +1,14 @@
-import Support from "@/sections/Support";
+import { Support, Questions } from '@/sections'
 
 export const metadata = {
-  title: 'Support'
+  title: 'Support',
 }
 
-export default function () {
-
+export default () => {
   return (
-      <>
-        <Support />
-      </>
+    <>
+      <Support />
+      <Questions />
+    </>
   )
 }

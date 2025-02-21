@@ -1,7 +1,7 @@
 import './EpisodeCard.scss'
-import Icon from '@/components/Icon'
+import { Icon } from '@/components'
 
-const EpisodeCard = (props) => {
+export const EpisodeCard = (props) => {
   const {
     number,
     title,
@@ -52,5 +52,3 @@ const EpisodeCard = (props) => {
     </div>
   )
 }
-
-export default EpisodeCard

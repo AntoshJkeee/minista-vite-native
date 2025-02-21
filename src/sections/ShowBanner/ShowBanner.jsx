@@ -1,6 +1,6 @@
-import MovieBannerCard from "@/components/MovieBannerCard";
+import { MovieBannerCard } from "@/components";
 
-const ShowBanner = () => {
+export const ShowBanner = () => {
 	return (
 		<section className="container" aria-labelledby='show-banner-title'>
 			<MovieBannerCard
@@ -13,6 +13,4 @@ const ShowBanner = () => {
 			/>
 		</section>
 	);
-};
-
-export default ShowBanner;
+}

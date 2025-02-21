@@ -1,11 +1,9 @@
 import './Categories.scss'
-import Section from "@/layouts/Section";
-import CategoryCard from "@/components/CategoryCard";
-import Slider from "@/components/Slider";
-import SliderNavigation from "@/components/Slider/components/SliderNavigation";
+import { Section } from '@/layouts'
+import { CategoryCard, Slider, SliderNavigation } from "@/components";
 import categoryItems from "./categoryItems";
 
-const Categories = () => {
+export const Categories = () => {
 	const sliderNavigationId = 'categories-slider-navigation'
 
 	return (
@@ -33,5 +31,3 @@ const Categories = () => {
 		</Section>
 	);
 };
-
-export default Categories;

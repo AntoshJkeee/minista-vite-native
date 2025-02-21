@@ -1,8 +1,8 @@
 import './Accordion.scss'
 import cn from "classnames";
-import Icon from "@/components/Icon";
+import { Icon } from "@/components";
 
-const Accordion = (props) => {
+export const Accordion = (props) => {
 	const {
 		title,
 		id,
@@ -36,7 +36,7 @@ const Accordion = (props) => {
 			<div
 				className="accordion__content"
 				id={id}
-				role="defenition"
+				role="definition"
 			>
 				<div className="accordion__content-inner">
 					<div className="accordion__content-body">
@@ -48,4 +48,3 @@ const Accordion = (props) => {
 	)
 }
 
-export default Accordion

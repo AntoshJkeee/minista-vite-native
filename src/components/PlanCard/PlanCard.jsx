@@ -1,7 +1,7 @@
 import './PlanCard.scss'
-import Button from '@/components/Button'
+import { Button } from '@/components'
 
-const PlanCard = (props) => {
+export const PlanCard = (props) => {
   const {
     title,
     description,
@@ -34,5 +34,3 @@ const PlanCard = (props) => {
     </div>
   )
 }
-
-export default PlanCard

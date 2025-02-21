@@ -1,9 +1,8 @@
 import './CategoryCard.scss'
-import {Image} from "minista";
-import Icon from "@/components/Icon";
-import Badge from "@/components/Badge";
+import { Image } from "minista";
+import { Icon, Badge } from "@/components";
 
-const CategoryCard = (props) => {
+export const CategoryCard = (props) => {
 	const {
 		title,
 		images = [],
@@ -41,6 +40,4 @@ const CategoryCard = (props) => {
 			</div>
 		</a>
 	);
-};
-
-export default CategoryCard;
+}

@@ -1,10 +1,8 @@
 import './Questions.scss'
-import Section from "@/layouts/Section";
-import Button from "@/components/Button";
-import AccordionGroup from "@/components/AccordionGroup";
-import Accordion from "@/components/Accordion";
+import { Section } from "@/layouts";
+import { Button, AccordionGroup, Accordion } from "@/components";
 
-const Questions = () => {
+export const Questions = () => {
 
 	const questionItems = [
 		'What is StreamVibe?',
@@ -45,5 +43,3 @@ const Questions = () => {
 		</Section>
 	);
 };
-
-export default Questions;

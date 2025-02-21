@@ -1,6 +1,6 @@
 import './Tags.scss'
 
-const Tags = (props) => {
+export const Tags = (props) => {
   const {
     items = [],
   } = props
@@ -17,5 +17,3 @@ const Tags = (props) => {
     </div>
   )
 }
-
-export default Tags

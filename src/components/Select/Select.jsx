@@ -2,17 +2,11 @@ import './Select.scss'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import classNames from 'classnames'
 
-const Select = (props) => {
+export const Select = (props) => {
   const {
     id = getIdFromTitle(props.label),
     label,
     isLabelHidden = true,
-    /**
-     * Array<{
-     *   value: string
-     *   isSelected?: boolean
-     * }>
-     */
     options = [],
     buttonClassName,
   } = props
@@ -96,5 +90,3 @@ const Select = (props) => {
     </div>
   )
 }
-
-export default Select

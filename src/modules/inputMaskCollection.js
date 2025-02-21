@@ -22,7 +22,7 @@ class InputMask {
   }
 }
 
-class InputMaskCollection {
+export class InputMaskCollection {
   constructor () {
     this.init()
   }
@@ -33,5 +33,3 @@ class InputMaskCollection {
     })
   }
 }
-
-export default InputMaskCollection

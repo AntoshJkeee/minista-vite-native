@@ -236,7 +236,7 @@ class Select extends BaseComponent {
   }
 }
 
-class SelectCollection {
+export class SelectCollection {
   constructor() {
     this.init()
   }
@@ -247,5 +247,3 @@ class SelectCollection {
     })
   }
 }
-
-export default SelectCollection

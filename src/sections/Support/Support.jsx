@@ -1,11 +1,8 @@
 import './Support.scss'
 import {Image} from "minista";
-import Field from "@/components/Field";
-import Checkbox from "@/components/Checkbox";
-import Button from "@/components/Button";
-import Select from "@/components/Select";
+import { Field, Checkbox, Button, Select } from "@/components";
 
-const Support = () => {
+export const Support = () => {
   return (
       <section
           className='support container'
@@ -85,6 +82,4 @@ const Support = () => {
         </form>
       </section>
   );
-};
-
-export default Support;
+}

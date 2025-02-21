@@ -1,8 +1,8 @@
 import './Socials.scss'
 import cn from "classnames";
-import Button from "@/components/Button";
+import { Button } from "@/components";
 
-const Socials = (props) => {
+export const Socials = (props) => {
 	const {
 	 	className,
 		links = []
@@ -32,6 +32,4 @@ const Socials = (props) => {
 			</ul>
 		</div>
 	);
-};
-
-export default Socials;
+}

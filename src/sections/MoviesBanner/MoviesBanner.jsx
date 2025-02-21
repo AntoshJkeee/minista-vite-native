@@ -1,8 +1,7 @@
 import './MoviesBanner.scss'
-import Slider from '@/components/Slider'
-import MovieBannerCard from '@/components/MovieBannerCard'
+import { Slider, MovieBannerCard } from '@/components'
 
-const MoviesBanner = () => {
+export const MoviesBanner = () => {
 
   const movieCards = [
     {
@@ -54,5 +53,3 @@ const MoviesBanner = () => {
     </section>
   )
 }
-
-export default MoviesBanner

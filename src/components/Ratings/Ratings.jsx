@@ -1,7 +1,7 @@
 import './Ratings.scss'
-import RatingView from '@/components/RatingView'
+import { RatingView } from '@/components'
 
-const Ratings = (props) => {
+export const Ratings = (props) => {
   const {
     items = [],
   } = props
@@ -22,5 +22,3 @@ const Ratings = (props) => {
     </div>
   )
 }
-
-export default Ratings

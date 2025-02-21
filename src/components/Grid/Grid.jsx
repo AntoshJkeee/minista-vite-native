@@ -1,7 +1,7 @@
 import './Grid.scss'
 import cn from "classnames";
 
-const Grid = (props) => {
+export const Grid = (props) => {
 
 	const {
 		columns = 1,
@@ -22,6 +22,4 @@ const Grid = (props) => {
 			))}
 		</ul>
 	);
-};
-
-export default Grid;
+}

@@ -1,7 +1,7 @@
 import './PersonCard.scss'
 import {Image} from "minista";
 
-const PersonCard = (props) => {
+export const PersonCard = (props) => {
 
 	const {
 		imgSrc,
@@ -25,6 +25,4 @@ const PersonCard = (props) => {
 			)}
 		</div>
 	);
-};
-
-export default PersonCard;
+}

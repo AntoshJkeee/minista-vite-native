@@ -1,14 +1,10 @@
 import './Collections.scss'
-import Tabs from '@/components/Tabs'
+import { Tabs, SliderNavigation, Slider, CategoryCard, MovieCard } from '@/components'
 import collectionGroups from './collectionGroups'
 import getIdFromTitle from '@/utils/getIdFromTitle'
-import Section from '@/layouts/Section'
-import SliderNavigation from '@/components/Slider/components/SliderNavigation'
-import Slider from '@/components/Slider'
-import CategoryCard from '@/components/CategoryCard'
-import MovieCard from "@/components/MovieCard";
+import { Section } from '@/layouts'
 
-const Collections = () => {
+export const Collections = () => {
   return (
     <Tabs
       className="collections container"
@@ -68,5 +64,3 @@ const Collections = () => {
     />
   )
 }
-
-export default Collections
