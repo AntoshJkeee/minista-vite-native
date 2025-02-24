@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	if (document.querySelector('[data-js-overlay-menu]')) {
-		import('/src/modules/SliderCollection').then(({ OverlayMenu }) => {
+		import('/src/modules/OverlayMenu').then(({ OverlayMenu }) => {
 			new OverlayMenu()
 		})
 	}
 
-	if (document.querySelector('[data-js-tabs]')) {
+	if (document.querySelector('[data-js-slider]')) {
 		import('/src/modules/SliderCollection').then(({ SliderCollection }) => {
 			new SliderCollection()
 		})

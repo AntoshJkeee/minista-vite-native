@@ -1,9 +1,10 @@
 import './Categories.scss'
 import { Section } from '@/layouts'
 import { CategoryCard, Slider, SliderNavigation } from "@/components";
-import categoryItems from "./categoryItems";
 
-export const Categories = () => {
+export const Categories = (props) => {
+	const { categoryItems } = props
+
 	const sliderNavigationId = 'categories-slider-navigation'
 
 	return (

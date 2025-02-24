@@ -1,4 +1,5 @@
 import { Plans, PlansComparison } from '@/sections'
+import { IndexStore } from "@/store/index.store";
 
 export const metadata = {
   title: 'Subscriptions',
@@ -7,7 +8,7 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <Plans />
+      <Plans {...IndexStore.Plans} />
       <PlansComparison />
     </>
   )

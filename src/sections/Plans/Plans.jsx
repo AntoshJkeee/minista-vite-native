@@ -1,8 +1,9 @@
 import { Section } from '@/layouts'
 import { Grid, PlanCard, Tabs, TabsNavigation } from "@/components";
-import planGroups from "@/sections/Plans/planGroups";
 
-export const Plans = () => {
+export const Plans = (props) => {
+
+	const { plansItems } = props;
 
 	const tabsTitle = 'plans-tabs'
 	const tabsNavigationId = 'plans-tabs-navigation'
@@ -16,19 +17,19 @@ export const Plans = () => {
 				<TabsNavigation
 					id={tabsNavigationId}
 					title={tabsTitle}
-					items={planGroups}
+					items={plansItems}
 				/>
 			)}
 		>
 			<Tabs
 				title={tabsTitle}
 				navigationTargetElementId={tabsNavigationId}
-				items={planGroups.map((planGroup) => ({
-					title: planGroup.title,
-					isActive: planGroup.isActive,
+				items={plansItems.map((planItem) => ({
+					title: planItem.title,
+					isActive: planItem.isActive,
 					children: (
 						<Grid columns={3}>
-							{planGroup.items.map((item, idx) => (
+							{planItem.items.map((item, idx) => (
 								<PlanCard {...item} key={idx} />
 							))}
 						</Grid>

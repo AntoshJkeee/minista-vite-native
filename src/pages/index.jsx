@@ -1,4 +1,5 @@
 import { Hero, Categories, Devices, Questions, Plans } from "@/sections";
+import { IndexStore } from "@/store/index.store";
 
 export const metadata = {
   title: 'Home',
@@ -9,10 +10,10 @@ export default () => {
   return (
     <>
       <Hero />
-      <Categories />
-      <Devices />
-      <Questions />
-      <Plans />
+      <Categories {...IndexStore.Categories} />
+      <Devices {...IndexStore.Devices} />
+      <Questions {...IndexStore.Questions} />
+      <Plans {...IndexStore.Plans} />
     </>
   )
 }

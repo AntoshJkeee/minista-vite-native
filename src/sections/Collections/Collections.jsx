@@ -1,16 +1,17 @@
 import './Collections.scss'
 import { Tabs, SliderNavigation, Slider, CategoryCard, MovieCard } from '@/components'
-import collectionGroups from './collectionGroups'
-import getIdFromTitle from '@/utils/getIdFromTitle'
 import { Section } from '@/layouts'
+import getIdFromTitle from '@/utils/getIdFromTitle'
 
-export const Collections = () => {
+export const Collections = (props) => {
+  const { collectionItems } = props
+
   return (
     <Tabs
       className="collections container"
       title="collections"
       isEnableOnlyOnMobile
-      items={collectionGroups.map((collectionGroup) => ({
+      items={collectionItems.map((collectionGroup) => ({
         isActive: collectionGroup.isActive,
         title: collectionGroup.title,
         children: (

@@ -1,40 +1,9 @@
 import { Section } from '@/layouts'
 import { DeviceCard, Grid } from "@/components";
 
-export const Devices = () => {
+export const Devices = (props) => {
 
-	const deviceItems = [
-		{
-			title: 'Smartphones',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/1.svg'
-		},
-		{
-			title: 'Tablet',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/2.svg'
-		},
-		{
-			title: 'Smart TV',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/3.svg'
-		},
-		{
-			title: 'Laptops',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/4.svg'
-		},
-		{
-			title: 'Gaming Consoles',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/5.svg'
-		},
-		{
-			title: 'VR Headsets',
-			description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-			imgSrc: '/images/devices/6.svg'
-		}
-	]
+	const { deviceItems } = props;
 
 	return (
 		<Section
