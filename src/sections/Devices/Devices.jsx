@@ -2,8 +2,9 @@ import { Section } from '@/layouts'
 import { DeviceCard, Grid } from "@/components";
 
 export const Devices = (props) => {
-
-	const { deviceItems } = props;
+	const {
+		deviceItems
+	} = props;
 
 	return (
 		<Section

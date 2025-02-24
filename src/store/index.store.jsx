@@ -1,4 +1,12 @@
 export const IndexStore = {
+	Hero: {
+		Button: {
+			className: "hero__button",
+			iconName: "play",
+			label: "Start Watching Now",
+			hasFillIcon: true,
+		}
+	},
 	Categories: {
 		categoryItems: [
 			{
@@ -291,5 +299,9 @@ export const IndexStore = {
 				]
 			},
 		]
-	}
+	},
 }
+
+// elem - Button { label: "Text", href="#" }
+// data - titleId: check
+//

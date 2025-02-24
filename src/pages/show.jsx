@@ -1,5 +1,5 @@
 import { ShowBanner, MovieDetails } from '@/sections'
-import { Seasons } from '@/components'
+import { ShowStore } from "@/store/show.store";
 
 export const metadata = {
   title: 'Show - Stranger Things',
@@ -10,7 +10,7 @@ export default () => {
     <>
       <ShowBanner />
       <MovieDetails
-        seasons={<Seasons />}
+        {...ShowStore.MovieDetails}
       />
     </>
   )

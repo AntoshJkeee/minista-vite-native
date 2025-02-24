@@ -3,8 +3,9 @@ import { Section } from "@/layouts";
 import { Button, AccordionGroup, Accordion } from "@/components";
 
 export const Questions = (props) => {
-
-	const { questionItems } = props
+	const {
+		questionItems
+	} = props
 
 	return (
 		<Section

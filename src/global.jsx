@@ -4,7 +4,7 @@ import { Header, Content, Footer } from "@/layouts"
 import { Banner } from "@/sections";
 
 export default (props) => {
-	const {children, title, url, isHeaderFixed} = props
+	const {children, title, url, isHeaderFixed, isNeedToRender, withCss} = props
 
 	return (
 		<>
@@ -17,11 +17,14 @@ export default (props) => {
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
+				{withCss && <link rel="stylesheet" href="/src/assets/css/entry.scss" />}
 			</Head>
 			<Header url={url} isFixed={isHeaderFixed}/>
 			<Content isResetPaddingTop={isHeaderFixed}>
 				{children}
 				<Banner />
+				{isNeedToRender ? <div>Render</div> : <div>No Render</div>}
+				<div className="entry">Entry css</div>
 			</Content>
 			<Footer/>
 		</>

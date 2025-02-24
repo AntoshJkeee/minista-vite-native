@@ -1,30 +1,10 @@
 import './MoviesBanner.scss'
 import { Slider, MovieBannerCard } from '@/components'
 
-export const MoviesBanner = () => {
-
-  const movieCards = [
-    {
-      title: 'Avengers : Endgame',
-      description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-      imgSrc: '/src/assets/images/movie-banner/1.jpg',
-    },
-    {
-      title: 'Avengers : Endgame 2',
-      description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-      imgSrc: '/src/assets/images/movie-banner/1.jpg',
-    },
-    {
-      title: 'Avengers : Endgame 3',
-      description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-      imgSrc: '/src/assets/images/movie-banner/1.jpg',
-    },
-    {
-      title: 'Avengers : Endgame 4',
-      description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-      imgSrc: '/src/assets/images/movie-banner/1.jpg',
-    },
-  ]
+export const MoviesBanner = (props) => {
+  const {
+    movieItems
+  } = props
 
   return (
     <section
@@ -46,8 +26,8 @@ export const MoviesBanner = () => {
         navigationPosition="abs-bottom"
         hasScrollbarOnMobile={false}
       >
-        {movieCards.map((movieCard, idx) => (
-          <MovieBannerCard {...movieCard} key={idx} />
+        {movieItems.map((item, idx) => (
+          <MovieBannerCard {...item} key={idx} />
         ))}
       </Slider>
     </section>

@@ -8,7 +8,7 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <MoviesBanner />
+      <MoviesBanner {...MoviesStore.MoviesBanner} />
       <Collections {...MoviesStore.Collections} />
     </>
   )

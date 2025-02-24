@@ -5,73 +5,12 @@ export const MovieDetails = (props) => {
 
   const {
     seasons,
+    castItems,
+    reviewItems
   } = props
 
   const titleId = 'movie-details-title'
   const castSliderNavigationId = 'movie-cast-slider-navigation'
-
-  const castItems = [
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-    { imgSrc: '/src/assets/images/people/cast.jpg', imgAlt: 'Ivan Ivanov' },
-  ]
-
-  const reviewItems = [
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-  ]
 
   return (
     <section

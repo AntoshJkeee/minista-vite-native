@@ -3,13 +3,14 @@ import { IndexStore } from "@/store/index.store";
 
 export const metadata = {
   title: 'Home',
-  isHeaderFixed: true
+  isHeaderFixed: true,
+  withCss: true,
 }
 
 export default () => {
   return (
     <>
-      <Hero />
+      <Hero  {...IndexStore.Hero}/>
       <Categories {...IndexStore.Categories} />
       <Devices {...IndexStore.Devices} />
       <Questions {...IndexStore.Questions} />
