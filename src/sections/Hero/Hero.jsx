@@ -3,7 +3,7 @@ import { Button } from "@/components";
 
 export const Hero = (props) => {
 	const {
-		Button: ButtonElement,
+		buttonEl,
 	} = props;
 
 	return (
@@ -17,7 +17,7 @@ export const Hero = (props) => {
 			</div>
 			<div className="hero__body">
 				<div className="hero__body-inner container">
-					<h1 className="hero__title h1" id='hero-title'>
+					<h1 className="hero__title h1" id="hero-title">
 						The Best Streaming Experience
 					</h1>
 					<div className="hero__description">
@@ -25,7 +25,7 @@ export const Hero = (props) => {
 							StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.
 						</p>
 					</div>
-					<Button {...ButtonElement}/>
+					<Button {...buttonEl}/>
 				</div>
 			</div>
 		</section>

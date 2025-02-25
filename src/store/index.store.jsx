@@ -1,6 +1,6 @@
 export const IndexStore = {
 	Hero: {
-		Button: {
+		buttonEl: {
 			className: "hero__button",
 			iconName: "play",
 			label: "Start Watching Now",
@@ -301,7 +301,3 @@ export const IndexStore = {
 		]
 	},
 }
-
-// elem - Button { label: "Text", href="#" }
-// data - titleId: check
-//
