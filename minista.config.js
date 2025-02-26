@@ -126,7 +126,7 @@ export default defineConfig({
       max_preserve_newlines: 0,
       indent_inner_html: true,
       extra_liners: [],
-      inline: ['span', 'strong', 'b', 'small', 'del', 's', 'code', 'br', 'wbr'],
+      inline: ['strong', 'b', 'small', 'del', 's', 'code', 'br', 'wbr'],
     },
     cssOptions: {
       indent_size: 2,

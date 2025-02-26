@@ -1,4 +1,8 @@
+import CheckJson from "@/modules/JsonApi.js";
+
 document.addEventListener('DOMContentLoaded', () => {
+
+	CheckJson()
 
 	if (document.querySelector('[data-js-overlay-menu]')) {
 		import('/src/modules/OverlayMenu').then(({ OverlayMenu }) => {

@@ -21,16 +21,19 @@ export default (props) => {
 			</Head>
 
 			{!listPages ? (
-				<>
-					<Header url={url} isFixed={isHeaderFixed}/>
-					<Content isResetPaddingTop={isHeaderFixed}>
-						{children}
-						<Banner />
-						<div className="entry">Entry css</div>
-					</Content>
-					<Footer/>
-				</>
-			)
+					<>
+						<Header url={url} isFixed={isHeaderFixed}/>
+						<Content isResetPaddingTop={isHeaderFixed}>
+							{children}
+							<div data-js-fake-api="/fake-api/test.json">
+								<button>Click</button>
+							</div>
+							<Banner/>
+							<div className="entry">Entry css</div>
+						</Content>
+						<Footer/>
+					</>
+				)
 				:
 				<>{children}</>}
 		</>
