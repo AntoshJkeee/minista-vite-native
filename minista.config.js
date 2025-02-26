@@ -136,5 +136,13 @@ export default defineConfig({
       indent_size: 2,
     },
   },
-  vite: {},
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          chunkFileNames: `assets/[name].js`
+        }
+      }
+    }
+  },
 })
